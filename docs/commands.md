@@ -1,0 +1,1 @@
+tree -I 'node_modules|.pnp|.pnp.js|coverage|build|.DS_Store|.env.local|.env.development.local|.env.test.local|.env.production.local|kendo-ui-license|npm-debug.log*|yarn-debug.log*|yarn-error.log*'
