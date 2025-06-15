@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Backend Server
+
+A basic Express server is provided for future PostgreSQL integration. The server exposes RESTful endpoints for folder and file management as described in `docs/context.md`.
+
+### Setup
+
+1. Create the database and tables:
+   ```bash
+   psql -f server/db/schema.sql
+   psql -f server/db/sample_data.sql
+   ```
+2. Start the server:
+   ```bash
+   npm run server
+   ```
+
+The server listens on port `3001` by default and exposes routes under `/api`.
